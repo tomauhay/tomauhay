@@ -1,63 +1,96 @@
-:root {
-  --surface: #ffffff;
-  --text: #222;
-  --muted: #666;
-  --border: #ececec;
-  --radius: 14px;
-  --shadow: 0 2px 8px rgba(0,0,0,.06);
+:root{
+  --bg:#fafafa;
+  --surface:#fff;
+  --text:#222;
+  --muted:#666;
+  --border:#ececec;
+  --brand:#0a6cff;
+  --radius:16px;
+  --shadow:0 2px 10px rgba(0,0,0,.06);
 }
 
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color: var(--text);
-  background: #fafafa;
-  line-height: 1.6;
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
 }
 
-.site-header, main, .site-footer {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 16px 20px;
+/* HERO */
+.hero{
+  background:linear-gradient(180deg,#f1f6ff,rgba(241,246,255,0));
+  border-bottom:1px solid var(--border);
+}
+.hero__inner{max-width:1120px;margin:0 auto;padding:28px 20px 18px}
+.lead{color:var(--muted);margin:.35rem 0}
+.chipbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.chip{display:inline-block;padding:8px 12px;border:1px solid var(--border);background:#fff;border-radius:999px;text-decoration:none;color:var(--text)}
+.chip:hover{border-color:#d8e6ff;background:#f7faff}
+
+/* LAYOUT */
+main{max-width:1120px;margin:0 auto;padding:20px}
+.section{margin:22px 0}
+.section--alt{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+.section__head h2{margin:0 0 6px}
+.section__head .muted{margin:0;color:var(--muted)}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:16px;margin:14px 0 8px;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:12px;
+  box-shadow:var(--shadow);
+}
+.card img{
+  width:100%;height:220px;object-fit:contain;background:#fff;
+  border:1px solid var(--border);border-radius:12px;
+}
+.card h3{font-size:1rem;margin:10px 0 4px}
+.meta{color:var(--muted);font-size:.95rem}
+.status{color:var(--muted);margin:6px 2px}
+
+/* FEATURED image cards */
+.featured .card--img{position:relative;padding:8px}
+.card--img .badge{
+  position:absolute;left:10px;top:10px;
+  background:#000000a0;color:#fff;font-size:.8rem;padding:4px 8px;border-radius:999px
 }
 
-.lead { color: var(--muted); margin-top: 6px; }
-
-h1 { font-size: 1.75rem; margin: 12px 0 4px; }
-h2 { font-size: 1.25rem; margin: 18px 0 8px; }
-h3 { font-size: 1rem; margin: 8px 0 6px; }
-
-a { color: #0a6cff; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 16px;
-  margin: 14px 0 8px;
+/* FEATURE GRID */
+.feature-grid{
+  display:grid;gap:14px;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
 }
+.feature{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px}
 
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px;
-  box-shadow: var(--shadow);
+/* STEPS */
+.steps{padding-left:18px}
+.steps li{margin:.25rem 0}
+
+/* FAQ */
+.faq{border:1px solid var(--border);border-radius:12px;padding:8px 12px;background:#fff;margin:10px 0}
+.faq summary{cursor:pointer;font-weight:600}
+.faq div{color:var(--muted);margin-top:6px}
+
+/* FOOTER */
+.footer{border-top:1px solid var(--border);margin-top:16px}
+.footer__inner{max-width:1120px;margin:0 auto;padding:14px 20px}
+.muted{color:var(--muted)}
+
+/* LINKS */
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* MEDIA */
+@media (max-width:560px){
+  .hero__inner{padding:22px 14px 14px}
+  main{padding:14px}
 }
-
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-  background: #fff;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-}
-
-.meta { color: var(--muted); font-size: .95rem; }
-
-.status { color: var(--muted); margin: 8px 2px; }
-
-.about { margin-top: 24px; }
-.site-footer { color: var(--muted); padding-top: 8px; padding-bottom: 28px; }
