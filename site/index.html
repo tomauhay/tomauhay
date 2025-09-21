@@ -1,98 +1,211 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tomauhay — Mẫu tô màu miễn phí cho bé (SVG/PDF)</title>
-  <meta name="description" content="Kho tranh tô màu outline đen trắng (SVG/PDF) để in và luyện tập cho trẻ em. Một phần nội dung mở của Tomauhay nhằm chia sẻ miễn phí cho cộng đồng.">
-  <link rel="canonical" href="https://tomauhay.com/">
-  <meta name="robots" content="index,follow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tomauhay — Tranh tô màu miễn phí cho bé (SVG/PDF) | Con vật • Công chúa • Học tập</title>
 
-  <!-- Open Graph (nhẹ nhàng, không nhồi nhét) -->
-  <meta property="og:title" content="Tomauhay — Mẫu tô màu miễn phí cho bé">
-  <meta property="og:description" content="Bộ sưu tập tranh tô màu dạng outline, in dễ, luyện tập sáng tạo cho bé.">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Kho tranh tô màu outline đen trắng (SVG/PDF) để in và luyện tập cho trẻ. Chủ đề đa dạng: Con vật, Công chúa, Xe cộ, Học tập (Số, Chữ cái), Lễ hội…">
+  <link rel="canonical" href="https://tomauhay.com/" />
+  <meta name="robots" content="index,follow" />
 
-  <!-- Schema: WebSite -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tomauhay — Tranh tô màu miễn phí cho bé" />
+  <meta property="og:description" content="Kho tranh tô màu outline đen trắng (SVG/PDF) để in và luyện tập. Chủ đề: Con vật, Công chúa, Xe cộ, Học tập, Lễ hội…" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tomauhay.github.io/tomauhay/" />
+
+  <!-- JSON-LD: WebSite + Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://tomauhay.github.io/tomauhay/",
-    "name": "Tomauhay - Coloring Pages",
-    "sameAs": [
-      "https://tomauhay.com/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Tomauhay - Coloring Pages",
+        "url": "https://tomauhay.github.io/tomauhay/",
+        "sameAs": ["https://tomauhay.com/"]
+      },
+      {
+        "@type": "Organization",
+        "name": "Tomauhay",
+        "url": "https://tomauhay.com/",
+        "logo": "https://tomauhay.com/favicon.ico"
+      }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Tomauhay — Mẫu tô màu miễn phí cho bé</h1>
-    <p class="lead">
-      Kho tranh tô màu <b>outline đen trắng</b> (SVG/PDF) để in và luyện tập. 
-      Xem đầy đủ tại <a href="https://tomauhay.com" rel="noopener">tomauhay.com</a>.
-    </p>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__inner">
+      <h1>Tomauhay — Mẫu tô màu miễn phí cho bé</h1>
+      <p class="lead">
+        Kho tranh tô màu <b>outline đen trắng</b> (SVG/PDF) để in và luyện tập cho trẻ em.
+        Chủ đề đa dạng: Con vật, Công chúa, Hoạt hình, Xe cộ, Học tập (Số, Chữ cái), Lễ hội…
+      </p>
+      <p class="lead">
+        Xem đầy đủ bộ sưu tập &amp; tải nhanh tại
+        <a href="https://tomauhay.com" rel="noopener">tomauhay.com</a>.
+      </p>
+      <nav class="chipbar" aria-label="Liên kết nhanh chủ đề">
+        <a class="chip" href="https://tomauhay.com" rel="noopener">Trang chủ</a>
+        <a class="chip" href="https://tomauhay.com/chu-de/con-vat" rel="noopener">Con vật</a>
+        <a class="chip" href="https://tomauhay.com/chu-de/nhan-vat/cong-chua" rel="noopener">Công chúa</a>
+        <a class="chip" href="https://tomauhay.com/chu-de/hoc-tap/so" rel="noopener">Số</a>
+        <a class="chip" href="https://tomauhay.com/chu-de/hoc-tap/chu-cai" rel="noopener">Chữ cái</a>
+        <a class="chip" href="https://tomauhay.com/chu-de/le-hoi" rel="noopener">Lễ hội</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section aria-labelledby="gallery-heading">
-      <h2 id="gallery-heading">Bộ sưu tập mẫu</h2>
+
+    <!-- ẢNH NỔI BẬT: dùng trực tiếp ảnh đang lưu trên tomauhay.com -->
+    <section class="section section--alt" aria-labelledby="featured-heading">
+      <div class="section__head">
+        <h2 id="featured-heading">Ảnh tô màu nổi bật</h2>
+        <p class="muted">Một vài ảnh tiêu biểu. Nhấp để mở ảnh gốc chất lượng cao.</p>
+      </div>
+
+      <div class="grid featured" role="list">
+        <!-- Con vật: 3 ảnh -->
+        <a class="card card--img" role="listitem" href="https://tomauhay.com/image/hinh-to-mau-con-vat-cho-be--tranh-to-mau-dong-vat-dep-pdf-47" target="_blank" rel="noopener" aria-label="Con vật dễ thương">
+          <img loading="lazy" decoding="async" src="https://tomauhay.com/images/images/original/con-vat-de-thuong-cho-be57.jpg" alt="Con vật dễ thương — tranh tô màu" />
+          <span class="badge">Con vật</span>
+        </a>
+        <a class="card card--img" role="listitem" href="https://tomauhay.com/image/hinh-to-mau-con-vat-cho-be--tranh-to-mau-dong-vat-dep-pdf-47" target="_blank" rel="noopener" aria-label="Con vật chi tiết">
+          <img loading="lazy" decoding="async" src="https://tomauhay.com/images/images/original/con-vat-chi-tiet53.jpg" alt="Con vật chi tiết — tranh tô màu" />
+          <span class="badge">Con vật</span>
+        </a>
+        <a class="card card--img" role="listitem" href="https://tomauhay.com/image/hinh-to-mau-con-vat-cho-be--tranh-to-mau-dong-vat-dep-pdf-47" target="_blank" rel="noopener" aria-label="Silhouette con vật">
+          <img loading="lazy" decoding="async" src="https://tomauhay.com/images/images/original/con-vat-dang-silhouette54.jpg" alt="Silhouette con vật — tranh tô màu" />
+          <span class="badge">Con vật</span>
+        </a>
+
+        <!-- Công chúa: 3 ảnh -->
+        <a class="card card--img" role="listitem" href="https://tomauhay.com/image/tranh-to-mau-cong-chua-cho-be-dep-de-thuong-182" target="_blank" rel="noopener" aria-label="Công chúa biển cả">
+          <img loading="lazy" decoding="async" src="https://tomauhay.com/images/images/original/cong-chua-bien-ca1407.jpg" alt="Công chúa biển cả — tranh tô màu" />
+          <span class="badge">Công chúa</span>
+        </a>
+        <a class="card card--img" role="listitem" href="https://tomauhay.com/image/tranh-to-mau-cong-chua-cho-be-dep-de-thuong-182" target="_blank" rel="noopener" aria-label="Công chúa hoạt hình dễ thương">
+          <img loading="lazy" decoding="async" src="https://tomauhay.com/images/images/original/cong-chua-hoat-hinh-de-thuong1402.jpg" alt="Công chúa hoạt hình dễ thương — tranh tô màu" />
+          <span class="badge">Công chúa</span>
+        </a>
+        <a class="card card--img" role="listitem" href="https://tomauhay.com/image/tranh-to-mau-cong-chua-cho-be-dep-de-thuong-182" target="_blank" rel="noopener" aria-label="Công chúa hoàng gia châu Âu">
+          <img loading="lazy" decoding="async" src="https://tomauhay.com/images/images/original/cong-chua-hoang-gia-chau-au1410.jpg" alt="Công chúa hoàng gia châu Âu — tranh tô màu" />
+          <span class="badge">Công chúa</span>
+        </a>
+      </div>
+
+      <p class="muted hint">
+        *Ảnh hiển thị ở đây được lưu trữ trực tiếp trên tomauhay.com; hãy ghé trang chi tiết để tải PDF/SVG và xem trọn bộ.
+      </p>
+    </section>
+
+    <!-- GALLERY động từ data/pages.json (SVG trong repo) -->
+    <section class="section" aria-labelledby="g-heading">
+      <div class="section__head">
+        <h2 id="g-heading">Bộ sưu tập mẫu trong kho</h2>
+        <p class="muted">Các mẫu dưới đây lấy trực tiếp từ thư mục <code>samples/</code> của repo (định dạng SVG). Nhấp để mở ảnh SVG ở tab mới.</p>
+      </div>
       <div id="gallery" class="grid" role="list" aria-live="polite"></div>
       <div id="status" class="status" aria-live="polite">Đang tải nội dung…</div>
       <noscript>Vui lòng bật JavaScript để xem thư viện tranh.</noscript>
     </section>
 
-    <section aria-labelledby="about-heading" class="about">
-      <h2 id="about-heading">Về dự án</h2>
-      <p>
-        Dự án <strong>Tomauhay</strong> được xây dựng như một phần nội dung mở trên GitHub, 
-        chia sẻ một số mẫu tranh tô màu miễn phí cho cộng đồng phụ huynh &amp; giáo viên. 
-        Tất cả file SVG trong kho này phát hành theo giấy phép <em>CC BY 4.0</em>.
-      </p>
-      <ul>
-        <li>Không nhồi link, không spam — mục tiêu là nội dung hữu ích, <em>vệ tinh sạch</em> hỗ trợ thương hiệu.</li>
-        <li>Một vài mẫu tiêu biểu hiển thị ở đây; bộ sưu tập đầy đủ tại trang chủ.</li>
-      </ul>
+    <!-- LỢI ÍCH GIÁO DỤC -->
+    <section class="section section--alt" aria-labelledby="edu-heading">
+      <div class="section__head">
+        <h2 id="edu-heading">Vì sao tô màu tốt cho trẻ?</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature"><h3>Phát triển vận động tinh</h3><p>Luyện điều khiển cổ tay, ngón tay — nền tảng cho viết chữ và thao tác thủ công.</p></article>
+        <article class="feature"><h3>Kích thích trí tưởng tượng</h3><p>Tự phối màu, thử gam sắc, kể câu chuyện riêng qua mỗi bức vẽ.</p></article>
+        <article class="feature"><h3>Tập trung &amp; kiên nhẫn</h3><p>Hoàn thiện một bức tranh đòi hỏi sự kiên trì và khả năng tập trung đủ dài.</p></article>
+        <article class="feature"><h3>Nhận biết thế giới</h3><p>Con vật, phương tiện, lễ hội… giúp mở rộng vốn từ và hiểu biết đời sống.</p></article>
+      </div>
+    </section>
+
+    <!-- HƯỚNG DẪN IN -->
+    <section class="section" aria-labelledby="print-heading">
+      <div class="section__head">
+        <h2 id="print-heading">Cách tải &amp; in tranh đẹp</h2>
+      </div>
+      <ol class="steps">
+        <li>Chọn mẫu → nhấp để mở <b>SVG</b> (hoặc PDF nếu có).</li>
+        <li>Trên máy tính: nhấn <b>Ctrl/Cmd + P</b> → khổ <b>A4</b>, <b>100%</b> (không co giãn), căn giữa trang.</li>
+        <li>Muốn PDF: dùng “Print to PDF” hoặc công cụ chuyển đổi SVG→PDF.</li>
+        <li>In cho bé mầm non: giấy 100–120gsm để màu không thấm.</li>
+      </ol>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" aria-labelledby="faq-heading">
+      <div class="section__head"><h2 id="faq-heading">Câu hỏi thường gặp</h2></div>
+      <details class="faq">
+        <summary>Những ảnh trên đầu trang là gì?</summary>
+        <div>Đó là một số ảnh tiêu biểu đang được lưu trữ trên tomauhay.com. Bạn có thể nhấp để tới trang chi tiết và tải PDF/SVG.</div>
+      </details>
+      <details class="faq">
+        <summary>SVG trong repo khác gì so với trên website?</summary>
+        <div>Repo lưu một phần nội dung để minh họa cách làm việc với SVG; trọn bộ chủ đề và phiên bản cập nhật nhanh nằm trên website.</div>
+      </details>
+      <details class="faq">
+        <summary>Tôi có thể góp ý/đề xuất thêm chủ đề?</summary>
+        <div>Vui lòng mở một <i>Issue</i> trên repo GitHub, mô tả nhu cầu của bạn. Rất hoan nghênh đóng góp!</div>
+      </details>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="section__head"><h2 id="about-heading">Về Tomauhay</h2></div>
+      <p><b>Tomauhay</b> hướng tới việc mang lại niềm vui và giá trị giáo dục thông qua hoạt động tô màu. 
+      Tranh dạng outline đen trắng giúp in dễ, tải nhanh, phù hợp nhiều lứa tuổi (đặc biệt mầm non &amp; tiểu học).</p>
+      <p>Tham khảo đầy đủ chủ đề &amp; bài viết tại <a href="https://tomauhay.com" rel="noopener">tomauhay.com</a>.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <small>© Tomauhay • Nội dung SVG trong repo phát hành theo CC BY 4.0 — ghi nguồn “tomauhay.com”.</small>
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="muted">© Tomauhay • Một phần nội dung cấp phép CC BY 4.0 (ghi nguồn “tomauhay.com”).</p>
+    </div>
   </footer>
 
   <script>
+  // Nạp gallery động từ data/pages.json (các SVG nằm trong repo)
   async function loadGallery() {
     const status = document.getElementById("status");
-    const container = document.getElementById("gallery");
+    const wrap = document.getElementById("gallery");
+
     try {
       const res = await fetch("../data/pages.json", { cache: "no-store" });
       if (!res.ok) throw new Error("Không tải được dữ liệu");
       const data = await res.json();
 
-      // Xóa trạng thái
       status.textContent = "";
-
-      // Vẽ thẻ
-      data.items.forEach(it => {
+      (data.items || []).forEach(it => {
         const card = document.createElement("article");
         card.className = "card";
         card.setAttribute("role", "listitem");
 
-        const link = document.createElement("a");
-        link.href = "../" + it.file;
-        link.target = "_blank";
-        link.rel = "noopener";
-        link.setAttribute("aria-label", it.title + " — mở file tô màu (tab mới)");
+        const a = document.createElement("a");
+        a.href = "../" + it.file;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.setAttribute("aria-label", it.title + " — mở file SVG (tab mới)");
 
         const img = document.createElement("img");
+        img.loading = "lazy";
+        img.decoding = "async";
         img.src = "../" + it.file;
         img.alt = it.title + " — tranh tô màu outline";
 
-        const title = document.createElement("h3");
-        title.textContent = it.title;
+        const h3 = document.createElement("h3");
+        h3.textContent = it.title;
 
         const meta = document.createElement("p");
         meta.className = "meta";
@@ -100,22 +213,21 @@
         const tags = (it.tags && it.tags.length) ? `• Thẻ: ${it.tags.join(", ")}` : "";
         meta.textContent = [age, tags].filter(Boolean).join(" ");
 
-        link.appendChild(img);
-        card.appendChild(link);
-        card.appendChild(title);
+        a.appendChild(img);
+        card.appendChild(a);
+        card.appendChild(h3);
         card.appendChild(meta);
-        container.appendChild(card);
+        wrap.appendChild(card);
       });
 
       if (!data.items || !data.items.length) {
-        status.textContent = "Chưa có mẫu nào. Vui lòng thêm SVG vào /samples và cập nhật data/pages.json.";
+        status.textContent = "Chưa có mẫu nào. Hãy thêm SVG vào /samples và cập nhật data/pages.json.";
       }
     } catch (err) {
-      status.textContent = "Có lỗi khi tải dữ liệu. Thử lại sau.";
       console.error(err);
+      status.textContent = "Có lỗi khi tải dữ liệu. Thử lại sau.";
     }
   }
-
   loadGallery();
   </script>
 </body>
