@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tomauhay.github.io/tomauhay/sitemap.xml

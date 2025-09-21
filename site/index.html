@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tomauhay — Mẫu tô màu miễn phí</title>
+  <link rel="canonical" href="https://tomauhay.com/">
+</head>
+<body>
+  <h1>Tomauhay — Mẫu tô màu miễn phí</h1>
+  <p>Xem thêm tại <a href="https://tomauhay.com">tomauhay.com</a></p>
+  <div id="gallery"></div>
+  <script>
+  async function load() {
+    const res = await fetch("../data/pages.json");
+    const data = await res.json();
+    const g = document.getElementById("gallery");
+    data.items.forEach(it => {
+      const d = document.createElement("div");
+      d.innerHTML = `<a href='../${it.file}' target='_blank'>${it.title}</a>`;
+      g.appendChild(d);
+    });
+  }
+  load();
+  </script>
+</body>
+</html>

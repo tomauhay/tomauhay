@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200">
+<rect x="30" y="80" width="160" height="90" fill="none" stroke="black" stroke-width="3"/>
+<rect x="60" y="110" width="30" height="60" fill="none" stroke="black" stroke-width="3"/>
+<rect x="130" y="110" width="30" height="60" fill="none" stroke="black" stroke-width="3"/>
+<polygon points="110,20 140,60 80,60" fill="none" stroke="black" stroke-width="3"/>
+<title>Lâu đài</title>
+</svg>

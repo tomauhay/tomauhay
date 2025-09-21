@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "star",
+      "title": "Ngôi sao",
+      "age": "4-6",
+      "tags": [
+        "hình học"
+      ],
+      "file": "samples/star.svg"
+    },
+    {
+      "id": "heart",
+      "title": "Trái tim",
+      "age": "4-6",
+      "tags": [
+        "tình cảm"
+      ],
+      "file": "samples/heart.svg"
+    },
+    {
+      "id": "castle",
+      "title": "Lâu đài",
+      "age": "6-8",
+      "tags": [
+        "kiến trúc"
+      ],
+      "file": "samples/castle.svg"
+    }
+  ]
+}
